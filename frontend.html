@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login/ Registration Form</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <button id="btn" type="button" class="toggle-btn" onclick="login()">
+            Login
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+
+        <div class="Social-icons">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-h-e2hgz8mwGfCt4gvj4IgMG_wAUolVM6w&s"
+          />
+          <img
+            src="https://img.freepik.com/free-psd/google-icon-isolated-3d-render-illustration_47987-9777.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1721088000&semt=sph"
+          />
+        </div>
+
+        <form id="login" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <div class="check">
+            <input type="checkbox" class="chech-box" />
+            <span>Remember Password</span>
+          </div>
+
+          <button type="submit" class="submit-btn">Log in</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+
+      function register() {
+        location.href = "register.html";
+      }
+    </script>
+  </body>
+</html>
